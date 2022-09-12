@@ -1,7 +1,11 @@
-#include <stdio.h>
-
-int main() {
-    printf("hello world!\n");
-    return 0;
+#include<omp.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+#pragma omp parallel
+	{
+		cout << "Hello, world!" << endl;
+	}
 }
 
