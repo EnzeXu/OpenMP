@@ -8,7 +8,7 @@ int main()
 	{
 #pragma omp for
 		for(int i=0;i<4;i++)
-		 cout << omp_get_thread_num() << endl;
+		    cout << i << ": " << omp_get_thread_num() << endl;
 	}
 }
 
